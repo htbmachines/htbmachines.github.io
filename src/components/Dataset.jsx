@@ -1365,6 +1365,43 @@ Dataset.push({ name: "Jail",
 	resuelta: true,
 });
 
+Dataset.push({ name: "Tenten",
+	id: count(),
+	sku: crypto.randomUUID(),
+	ip: "10.10.10.10",
+	so: "Linux",
+	dificultad:	"Media",
+	skills: "Wordpress Enumeration CV filename disclosure on Job-Manager Wordpress Plugin [CVE-2015-6668] Steganography Challenge (Steghide) Cracking Hashes [Protected SSH Private Key] Abusing sudoers privilege",
+	like: "eWPT eJPT",
+	youtube: "https://www.youtube.com/watch?v=T1pr-A8qA7I",
+	resuelta: true,
+});
+
+Dataset.push({ name: "SecNotes",
+	id: count(),
+	sku: crypto.randomUUID(),
+	ip: "10.10.10.97",
+	so: "Windows",
+	dificultad:	"Media",
+	skills: "User Enumeration (Wfuzz) Reflected XSS Stored XSS SQL Injection Cross-Site Request Forgery (CSRF) - Changing a user's password IIS Exploitation (Uploading WebShell) Abusing Linux subsystem Information Leakage [Privilege Escalation]",
+	like: "eWPT OSCP",
+	youtube: "https://www.youtube.com/watch?v=JZf7t3UMuVw",
+	resuelta: true,
+});
+
+Dataset.push({ name: "Chatterbox",
+	id: count(),
+	sku: crypto.randomUUID(),
+	ip: "10.10.10.74",
+	so: "Windows",
+	dificultad:	"Media",
+	skills: "Achat 0.150 beta7 - Buffer Overflow (Windows 7 32 bits) Generating a Shellcode based on our needs + TIPS Icacls Abuse (Privilege Escalation) PowerUp Enumeration (Alternative Privilege Escalation)",
+	like: "OSCP Buffer Overflow",
+	youtube: "https://www.youtube.com/watch?v=mQnwwu97f1g",
+        bufferOverFlow: "Buffer overflow",
+	resuelta: true,
+});
+
 /*Dataset.push({ name: "",
 	id: count(),
 	sku: crypto.randomUUID(),
