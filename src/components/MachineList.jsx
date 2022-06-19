@@ -59,12 +59,12 @@ const MachineList =(props)=> { return ( <>
 
               &nbsp;&nbsp;&nbsp;
             <SettingsIcon 
-              ml={4} mt={-2}
+              ml={4} mt={-3} mr={-2}
             /> {obj.so}
 
               &nbsp;&nbsp;
             <WarningTwoIcon 
-              ml={4} mr={8} mt={-2}
+              ml={4} mr={8} mt={-4}
               css={{ color:
 
                 (()=> { switch (obj.dificultad) {
@@ -77,10 +77,10 @@ const MachineList =(props)=> { return ( <>
               }}
             />{obj.dificultad}&nbsp;
               
-            {obj.activeDirectory && <TriangleUpIcon color="blue" ml={4} mr={4} mt={-4}/>}
+            {obj.activeDirectory && <TriangleUpIcon color="#61afef" ml={4} mr={4} mt={-4}/>}
 
             <span style={{
-              color: "blue",
+              color: "#61afef",
             }}>{ obj.activeDirectory && obj.activeDirectory+' '}</span>&nbsp;
 
             {obj.bufferOverFlow && <HamburgerIcon color="orange" mr={4} mt={-4}/>}
