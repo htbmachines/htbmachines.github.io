@@ -44,6 +44,20 @@ export const GlobalStyle = createGlobalStyle`
 		filter: 'contrast(0.1) blur(0.4px)',
   }
 
+  @-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+  }
+
+  .rotating {
+    -webkit-animation: rotating 2s linear infinite;
+  }
+
+
 `;
 
 const FadeInKeyFrames = keyframes`
@@ -57,9 +71,9 @@ const FadeInKeyFrames = keyframes`
   }
 `;
 export const FadeIn = ({ time = "1s", type = "ease" } = {}) => {
-	return css`
-		animation: ${time} ${FadeInKeyFrames} ${type};
-	`;
+  return css`
+    animation: ${time} ${FadeInKeyFrames} ${type};
+  `;
 };
 
 const bounceDownKeyFrames = keyframes`
@@ -85,9 +99,9 @@ const bounceDownKeyFrames = keyframes`
 `;
 
 export const bounceDown = ({ time = "1s", type = "ease" } = {}) => {
-	return css`
-		animation: ${time} ${bounceDownKeyFrames} ${type};
-	`;
+  return css`
+    animation: ${time} ${bounceDownKeyFrames} ${type};
+  `;
 };
 
 const positionDownKeyFrames = keyframes`
@@ -100,9 +114,9 @@ const positionDownKeyFrames = keyframes`
   }
 `;
 export const positionDown = ({ time = "1s", type = "ease" } = {}) => {
-	css`
-		animation: ${time} ${positionDownKeyFrames} ${type};
-	`;
+  css`
+    animation: ${time} ${positionDownKeyFrames} ${type};
+  `;
 };
 
 const scaleDown = keyframes`
@@ -114,14 +128,14 @@ const scaleDown = keyframes`
   }
 `;
 export const scale = ({ time = "1s", type = "ease" } = {}) =>
-	css`
-		animation: ${time} ${scaleDown} ${type};
-	`;
+  css`
+    animation: ${time} ${scaleDown} ${type};
+  `;
 
 export const gradient = ({
-	direction = "to right",
-	first = "#9c0",
-	end = "#ff0070",
+  direction = "to right",
+  first = "#9c0",
+  end = "#ff0070",
 } = {}) => css`
-	background-image: linear-gradient(${direction}, ${first}, ${end});
+  background-image: linear-gradient(${direction}, ${first}, ${end});
 `;
