@@ -1422,6 +1422,18 @@ Dataset.push({ name: "Union",
 	dificultad:	"Media",
 	skills: "SQLI (SQL Injection) - UNION Injection - SQLI - Read Files - HTTP Header Command Injection - X-FORWARDED-FOR [RCE] - Abusing sudoers privilege [Privilege Escalation]",
 	like: "eWPT eJPT",
+	youtube: "https://www.youtube.com/watch?v=i2aHMXFb1Yk",
+	resuelta: true,
+});
+
+Dataset.push({ name: "Dab",
+	id: count(),
+	sku: crypto.randomUUID(),
+	ip: "10.10.10.86",
+	so: "Linux",
+	dificultad:	"Difícil",
+	skills: "Applying brute force to an authentication panel - Wfuzz (Discovering valid password) - Applying cookie discovery with Wfuzz (Brute Force) - SSRF - Server Side Request Forgery (Internal Port Discovery) - Wfuzz - Abusing Memcached - Getting stored credentials - Cracking Hashes - SSH User Enumeration - CVE-2018-15473 - Abusing SUID Binary - Ltrace/Radare2 Inspection (Password Leaking) - Hijacking dynamically linked shared object library [Privilege Escalation]",
+	like: "eWPT OSWE OSCP",
 	youtube: "",
 	resuelta: false,
 });
