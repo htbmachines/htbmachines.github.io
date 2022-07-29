@@ -1731,6 +1731,18 @@ Dataset.push({ name: "Charon",
 	resuelta: true,
 });
 
+Dataset.push({ name: "Feline",
+	id: count(),
+	sku: crypto.randomUUID(),
+	ip: "10.10.10.205",
+	so: "Linux",
+	dificultad:	"Difícil",
+	skills: "Information leakage in error message RCE by deserialization in Apache Tomcat with PersistentManager - CVE-2020-9484 [RCE] Playing with Ysoserial - CommonsCollections2 Manipulating our session cookie (JSESSIONID) + Directory Path Traversal Playing with chisel [Socks Proxy + Proxychains (socks5)] SaltStack Exploitation - CVE-2020-1651 Gaining root access to a container Playing with docker.sock file + Abusing Docker API [Privilege Escalation] PIVOTING",
+	like: "eWPT eWPTXv2 eCPPTv2 eCPPTXv2 OSWE",
+	youtube: "https://www.youtube.com/watch?v=0e91a_Pns2Q",
+	resuelta: true,
+});
+
 /*Dataset.push({ name: "",
 	id: count(),
 	sku: crypto.randomUUID(),
