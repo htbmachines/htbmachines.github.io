@@ -7,8 +7,13 @@ const getMachines = async () => {
     Papa.parse(
       "https://docs.google.com/spreadsheets/d/e/2PACX-1vQmEGmBIv8KqN_e9UejoNww0HLq8Io2hl40dHyvCHhcPKUYRTZnTWU8REUaQvTzIT3oy7QZJ4ecN6xs/pub?&output=csv",
       {
+	skipEmptyLines: 'greedy',
+	comments: '#',
         download: true,
         header: true,
+	transformHeader: function(h) {
+		return h.replace(/\s/g, '');
+	},
         complete: (results) => {
           resolve(results.data);
         },
@@ -30,23 +35,23 @@ const setMachines = (result) => {
     if (Object.hasOwnProperty.call(data, machine)) {
       const element = data[machine];
       Dataset.push({
-        name: element.writeup.includes("youtube")
-          ? element.maquina
-          : element.maquina + " " + element.writeup,
+        name: element.Writeup.includes("youtube")
+          ? element.Máquina
+          : element.Máquina + " " + element.Writeup,
         id: count,
         sku: crypto.randomUUID(),
-        ip: element.ip,
-        so: element.so,
-        dificultad: element.dificultad,
-        skills: element.tecnicas,
-        like: element.like,
-        youtube: element.writeup.includes("youtube")
-          ? element.writeup
+        ip: element.DirecciónIP,
+        so: element.SistemaOperativo,
+        dificultad: element.Dificultad,
+        skills: element.TécnicasVistas,
+        like: element.Like,
+        youtube: element.Writeup.includes("youtube")
+          ? element.Writeup
           : "https://www.twitch.tv/s4vitaar",
-        activeDirectory: element.like.includes("Active Directory")
+        activeDirectory: element.Like.includes("Active Directory")
           ? "Active Directory"
           : "",
-        resuelta: element.resuelta === "Si" ? true : false,
+        resuelta: element.Resuelta === "Si" ? true : false,
       });
       count++;
     }
